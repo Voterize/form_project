@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML шапка страницы формы</title>
+</head>
+<body>
+<h2> Оставьте отзыв </h2>
+<form method="get">
+<!--    {% csrf_token %}-->
+    <label for="name_id">Имя:</label>
+    <input type="text" id="name_id" name="name" required>
+    <br> <br>
+
+    <label for="surname_id">Фамилия:</label>
+    <input type="text" id="surname_id" name="surname" required>
+    <br> <br>
+    
+    <label for="feedback_id">Напишите отзыв:</label>
+    <textarea name="feedback" id="feedback_id" cols="30" rows="5" required></textarea>
+    <br> <br>
+    <button>Отправить</button>
+</form>
+
+</body>
+</html>
